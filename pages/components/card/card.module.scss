@@ -1,0 +1,52 @@
+.card {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.3rem;
+  border: 1px solid rgb(216, 216, 216);
+  border-radius: 5px;
+  margin: 1.5rem 0;
+
+  &:hover {
+    border: 1px solid #67deff;
+
+  }
+
+  .department {
+    color: #67deff;
+  }
+
+  .position {
+    color: black;
+    font-weight: bold;
+  }
+
+  .locationType {
+    display: flex;
+    margin-top: 1rem;
+
+    h5 {
+      color: gray;
+      font-size: 1rem;
+      margin-bottom: 0;
+    }
+  }
+
+  .link {
+    min-width: 9rem;
+    display: flex;
+    color: #67deff;
+    justify-content: end;
+
+    @media screen and (max-width: 575px) {
+      min-width: 2rem;
+
+      h6 {
+        display: none;
+      }
+    }
+
+    h6 {
+      color: #67deff;
+    }
+  }
+}
